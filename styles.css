@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: -1;
+}
+
+.profile-wrapper {
+    margin-top: 20px; /* Lowering the image */
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Removed text overlay from image */
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #666;
+}
+
+header p.motivational-text {
+    font-size: 1.1em;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2575fc;
+    border-left: 4px solid #6a11cb;
+    padding-left: 10px;
+}
+
+.about p, .skills ul, .experience ul, .projects ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Skills Section */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background: #2575fc;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 5px;
+    font-size: 1em;
+}
+
+/* Experience Section */
+.experience .job {
+    margin-bottom: 20px;
+}
+
+.experience h4 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience ul li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.experience ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2575fc;
+}
+
+/* Projects Section */
+.projects .project {
+    margin-bottom: 15px;
+}
+
+.projects h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #2575fc;
+}
+
+.projects p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
